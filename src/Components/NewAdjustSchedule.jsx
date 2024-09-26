@@ -1,7 +1,12 @@
-import React from "react";
+import { DateCalendar } from "@mui/x-date-pickers";
+import "./NewAdjustSchedule";
 
 const NewAdjustSchedule = () => {
-  return <div>NewAdjustSchedule</div>;
+  return (
+    <div>
+      <DateCalendar showDaysOutsideCurrentMonth fixedWeekNumber={6} />
+    </div>
+  );
 };
 
 export default NewAdjustSchedule;

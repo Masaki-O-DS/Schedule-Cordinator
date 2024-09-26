@@ -1,0 +1,35 @@
+.fukidashi-01-05 {
+  position: absolute; /* 位置を絶対指定に変更 */
+  left: 110%; /* ボタンの右側に吹き出しを表示 */
+  top: 50%; /* ボタンの中央に合わせる */
+  transform: translateY(-50%); /* 吹き出しを中央揃えにする */
+  position: relative;
+  width: fit-content;
+  padding: 12px 16px;
+  border-bottom: 2px solid #333333;
+  background-color: white; /* 背景色を指定 */
+  z-index: 10; /* ボタンより前面に表示 */
+}
+.fukidashi-01-05::before {
+  content: "";
+  position: absolute;
+  right: -24px;
+  bottom: -13px;
+  width: 30px;
+  height: 2px;
+  transform: rotate(50deg);
+  box-sizing: border-box;
+  background-color: #333333;
+}
+.fukidashi-01-05::after {
+  content: "";
+  position: absolute;
+  right: -23px;
+  bottom: -28px;
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff; /* 背景色と同じ色を指定 */
+  border-radius: 50%;
+  background-color: #333333;
+}

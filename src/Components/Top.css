@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh; /* ビューポート全体を使用 */
+  width: 100vw; /* ビューポート全体の幅 */
+  margin: 0; /* 余白のリセット */
 }
 
 .title {
@@ -25,17 +27,19 @@
   margin-top: 0;
 }
 
-.login {
+.isauth-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; /* これで親要素いっぱいに広がる */
+  text-align: center; /* テキストを中央揃え */
 }
 
-p {
+.top-p {
   font-size: 20px;
 }
 
-button {
+.top-button {
   font-size: 15px;
   margin-top: 20px;
   padding: 10px 20px;
@@ -44,9 +48,21 @@ button {
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* ボタンを親要素の幅に合わせる */
+  max-width: 300px; /* 必要に応じて最大幅を制限 */
+  margin-bottom: 5px;
+  height: 40px;
 }
 
-button:hover {
+.top-button:hover {
   transform: translateY(2px);
   box-shadow: none;
+}
+
+.message {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
