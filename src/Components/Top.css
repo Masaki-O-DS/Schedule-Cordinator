@@ -1,0 +1,68 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* ビューポート全体を使用 */
+  width: 100vw; /* ビューポート全体の幅 */
+  margin: 0; /* 余白のリセット */
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(50px + 1vh);
+  margin-bottom: 20px; /* 下部にスペースを追加 */
+}
+
+.schedule {
+  margin-bottom: 0;
+}
+
+.coordinator {
+  margin-top: 0;
+}
+
+.isauth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* これで親要素いっぱいに広がる */
+  text-align: center; /* テキストを中央揃え */
+}
+
+.top-p {
+  font-size: 20px;
+}
+
+.top-button {
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  box-shadow: 1px 5px 20px -2px #8266e5;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* ボタンを親要素の幅に合わせる */
+  max-width: 300px; /* 必要に応じて最大幅を制限 */
+  margin-bottom: 5px;
+  height: 40px;
+}
+
+.top-button:hover {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.message {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
