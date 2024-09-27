@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Top = ({ isAuth, setIsAuth }) => {
   const navigate = useNavigate();
+
   const [name, setName] = useState("");
 
   //googleでログイン
